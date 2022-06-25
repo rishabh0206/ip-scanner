@@ -26,5 +26,5 @@ dev = ["black", "bumpversion", "isort", "pip-tools", "pytest"]
 [project.urls]
 Homepage = "https://github.com/rishabh0206/ip-scanner"
 
-# [project.scripts]
-# ip-scanner = "ip-scanner.ip_scanner:main"
+[project.scripts]
+ip_scanner = "ip_scanner.__main__:main"

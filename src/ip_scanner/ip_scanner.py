@@ -21,7 +21,6 @@ class IPScanner:
         self.ports = ports if ports else self.ports
         self.start_ip = start_ip if start_ip else self.start_ip
         self.end_ip = end_ip if end_ip else self.end_ip
-        self.start_scanning()
 
     def start_scanning(self):
         """Start scanning the provided ip address and ports
