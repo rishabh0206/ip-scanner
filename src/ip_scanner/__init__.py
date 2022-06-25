@@ -57,6 +57,7 @@ class IPScanner:
         total = end_time - start_time
         print(f"Scanning completed in: {total}")
         print(block_separator)
+        return live_ips
 
     def connect_socket(self, address, port) -> bool:
         """Connect to socket of given address and port
@@ -107,7 +108,7 @@ class IPScanner:
                 live = 1
         return live
 
-if __name__ == "__main__":
+def main():
     base_ip = None
     ports = None
     start_ip = None
@@ -120,3 +121,7 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Unable to read arguments, running with default properties - {e}")
     ipScanner= IPScanner(base_ip=base_ip, ports=ports, start_ip=start_ip, end_ip=end_ip)
+    ipScanner.start_scanning()
+
+if __name__ == "__main__":
+    main()
