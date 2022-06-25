@@ -1,7 +1,9 @@
 # ip-scanner
 Pip package to scan IP address on local ip range.
 
-Installation
+It scans all ip addresses on specified range and port/s and returns the list of live IP addresses.
+
+### Installation
 You can install the IP Scanner from PyPI:
 ```
 python -m pip install scyrpt-studio-ip-scanner
@@ -9,7 +11,7 @@ python -m pip install scyrpt-studio-ip-scanner
 
 IP Scanner is supported on Python 3.8 and above.
 
-How to use
+### How to use
 
 There are 2 ways to use this library -
 
