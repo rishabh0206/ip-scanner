@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scyrpt-studio-ip-scanner"
-version = "0.0.3"
+version = "0.0.4"
 description = "Pip package to scan IP address on local ip range."
 readme = "README.md"
 authors = [{ name = "Rishabh Wadhwa", email = "rishabh0206@gmail.com" }]
